@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, {memo, useRef, useState, useEffect, useCallback} from 'react';
+import React, { memo, useRef, useState, useEffect, useCallback } from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
-import { addItems, selectItems, searchedResult} from '../actions';
+import { addItems, selectItems, searchedResult } from '../actions';
 
 import Item from './Item';
 

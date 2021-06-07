@@ -2,7 +2,7 @@
 import React, {memo, useEffect, useState} from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
 import {searchedItems, selectItems, removeSearchedItems} from '../actions';
-
+import { ToastContainer, toast } from 'react-toastify';
 const Search = (handleBack) => {
     const dispatch = useDispatch();
     const items= useSelector(selectItems, shallowEqual);
@@ -14,6 +14,7 @@ const Search = (handleBack) => {
     const searchData = () => {
         if (value.length === 0) return;
         let newArray = items.filter(el => el.name.match(new RegExp(value, 'gi')));
+        if (newArray.length === 0) toast.dark("Can't find any movies with this name. Please try some other movies!", {autoClose: 3000,});
         dispatch(searchedItems(newArray));
     };
     const onEnter = (event) => {
@@ -39,6 +40,7 @@ return (
             src={process.env.PUBLIC_URL + '/assets/search.png'} 
             alt="Search" />
         </button>
+        <ToastContainer />
     </div>
 );
 };
