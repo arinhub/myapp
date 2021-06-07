@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="item"
+>
+  <span
+    className=" lazy-load-image-background blur"
+    style={
+      Object {
+        "backgroundImage": "",
+        "backgroundSize": "",
+        "display": "inline-block",
+        "height": "196px",
+        "width": undefined,
+      }
+    }
+  >
+    <span
+      className=""
+      style={
+        Object {
+          "display": "inline-block",
+          "height": "196px",
+        }
+      }
+    />
+  </span>
+  <p
+    className="title"
+  >
+    test
+  </p>
+</div>
+`;

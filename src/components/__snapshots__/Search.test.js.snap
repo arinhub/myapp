@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="search_field"
+>
+  <input
+    name="query"
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    placeholder="Search movies!"
+    value=""
+  />
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    <img
+      alt="Search"
+      className="search-icon"
+      src="/assets/search.png"
+    />
+  </button>
+  <div
+    className="Toastify"
+  />
+</div>
+`;

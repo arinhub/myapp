@@ -1,5 +1,5 @@
 import React, {memo, useState, useEffect} from 'react';
-import { useSelector, shallowEqual, useDispatch} from 'react-redux';
+import { useSelector, shallowEqual} from 'react-redux';
 import {searchedResult} from '../actions';
 import Search from './Search';
 
